@@ -11,15 +11,15 @@ local fgfloat = "#D6DDEA"
 
 -- background
 local bg = "#191d23"
+local bg_block = "#1E2329"
 local bg_accent = "#222630"
-local bg_block = "#1C2228"
-local bgfloat = "#1B2026"
-local bgfloat_accent = "#1E242A"
-local bgfloat_select = "#262D35"
+local bgfloat = "#1C2026"
+local bgfloat_accent = "#283037"
+local bgfloat_select = "#23272F"
 
 -- accent
-local v_select = "#03205A"
-local v_select_nontext = "#354C7A"
+local v_select = "#152550"
+local v_select_nontext = "#435076"
 local string = "#63B19D"
 local raw_text = "#49C78E"
 local operator = "#75928E"
@@ -27,19 +27,20 @@ local constant = "#B4ADEA"
 local keyword = "#A9B9EF"
 local important = "#89A9FE"
 local search = "#E9B872"
-local number = "#EF767A"
+local number = "#FF6B6F"
 
 -- notifications
-local info = "#BF9BBC"
+local info = "#3089FF"
 local warn = "#FFA630"
-local error = "#F71735"
+local error = "#da3e44"
 
 -- git
-local git_add_fg = "#A6C9C4"
-local git_add_bg = "#203C46"
-local git_delete_fg = "#F3BABF"
-local git_delete_bg = "#341c28"
-local git_change = "#5E7CE2"
+local git_add_fg = "#9FDACC"
+local git_add_bg = "#1E3A34"
+local git_delete_fg = "#FFC0C5"
+local git_delete_bg = "#3A1A21"
+local git_change_fg = "#B7C4FF"
+local git_change_bg = "#1F2B5C"
 
 local hl = {}
 
@@ -135,7 +136,7 @@ hl["Typedef"] = { link = "Type" }
 -- ************** FILETYPE **************
 -- diff
 hl["DiffAdd"] = { fg = git_add_fg, bg = git_add_bg }
-hl["DiffChange"] = { bg = tint(git_change, -40) }
+hl["DiffChange"] = { fg = git_change_fg, bg = git_change_bg }
 hl["DiffDelete"] = { fg = git_delete_fg, bg = git_delete_bg }
 hl["DiffText"] = { bg = important }
 
