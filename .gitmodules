@@ -1,0 +1,3 @@
+[submodule "extra/tmux"]
+	path = extra/tmux
+	url = https://github.com/akmalsoliev/techbase-tmux-theme.git
