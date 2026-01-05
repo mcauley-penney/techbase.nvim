@@ -5,7 +5,7 @@ return {
     a = { fg = c.normal_bg, bg = c.important, gui = "bold" },
     b = {
       fg = c.normal_fg,
-      bg = c.normal_bg_alt,
+      bg = c.normal_embed_bg,
     },
     c = { fg = c.normal_fg, bg = c.normal_bg },
   },

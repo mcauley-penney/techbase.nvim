@@ -4,15 +4,14 @@ return {
   nontext_fg = "#363848",
   comment_fg = "#474B65",
   quote_fg = "#7E8193",
+  float_border_fg = "#2A2F39",
 
   -- background
   normal_bg = "#191d23",
-  panel_bg = "#1B1F25",
+  normal_embed_bg = "#20252E",
   float_bg = "#1C2127",
-  normal_bg_alt = "#20252E",
-  normal_bg_accent = "#242932",
-  float_bg_border = "#2A2F39",
   float_bg_select = "#1F242D",
+  panel_bg = "#1B1F25",
 
   -- accent
   v_select = "#13214B",
@@ -33,13 +32,13 @@ return {
   error = "#F71735",
 
   -- git
-  git_add_fg = "#9FDACC",
   git_add_bg = "#1E3A34",
-  git_add_col = "#366A4C",
-  git_delete_fg = "#FFC0C5",
   git_delete_bg = "#3A1A21",
-  git_delete_col = "#942B27",
-  git_change_fg = "#B7C4FF",
   git_change_bg = "#1F2B5C",
+  git_add_fg = "#9FDACC",
+  git_delete_fg = "#FFC0C5",
+  git_change_fg = "#B7C4FF",
+  git_add_col = "#366A4C",
+  git_delete_col = "#942B27",
   git_change_col = "#3F58BB",
 }
