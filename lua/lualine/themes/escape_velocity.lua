@@ -1,4 +1,4 @@
-local c = require("techbase.palettes.techbase-hc")
+local c = require("techbase.palettes.escape_velocity")
 
 return {
   normal = {

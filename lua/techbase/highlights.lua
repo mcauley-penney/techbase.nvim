@@ -7,9 +7,9 @@ return function(c)
   -- windows
   hl["Normal"] = { fg = c.normal_fg, bg = c.normal_bg }
   hl["NormalFloat"] = { fg = c.float_fg, bg = c.float_bg }
-  hl["FloatBorder"] = { fg = c.float_bg_border, bg = c.float_bg }
+  hl["FloatBorder"] = { fg = c.float_border_fg, bg = c.float_bg }
   hl["FloatTitle"] = { fg = c.important, bg = c.float_bg }
-  hl["WinSeparator"] = { fg = c.normal_bg_alt }
+  hl["WinSeparator"] = { fg = c.normal_embed_bg }
 
   -- diff
   hl["Added"] = { fg = c.git_add_fg, bg = c.git_add_bg }
@@ -17,11 +17,11 @@ return function(c)
   hl["Removed"] = { fg = c.git_delete_fg, bg = c.git_delete_bg }
 
   -- elements
-  hl["ColorColumn"] = { bg = c.normal_bg_accent }
+  hl["ColorColumn"] = { bg = c.normal_embed_bg }
   hl["Conceal"] = { fg = "fg" }
   hl["CurSearch"] = { fg = c.normal_bg, bg = c.number }
   hl["Cursor"] = { bg = c.cursor }
-  hl["CursorLine"] = { bg = c.normal_bg_accent }
+  hl["CursorLine"] = { bg = c.normal_embed_bg }
   hl["CursorLineNr"] = { fg = "fg" }
   hl["Delimiter"] = { fg = "fg" }
   hl["Directory"] = { fg = c.important }
@@ -29,10 +29,10 @@ return function(c)
   hl["Error"] = { fg = c.error }
   hl["ErrorMsg"] = { link = "Error" }
   hl["FoldColumn"] = { link = "NonText" }
-  hl["Folded"] = { fg = c.keyword, bg = c.normal_bg_accent }
+  hl["Folded"] = { fg = c.keyword, bg = c.normal_embed_bg }
   hl["IncSearch"] = { link = "Search" }
   hl["LineNr"] = { link = "NonText" }
-  hl["MatchParen"] = { fg = c.search, bg = c.normal_bg_alt }
+  hl["MatchParen"] = { fg = c.search, bg = c.normal_embed_bg }
   hl["ModeMsg"] = { fg = c.constant }
   hl["MoreMsg"] = { link = "ModeMsg" }
   hl["MsgArea"] = { fg = "fg" }
@@ -53,7 +53,7 @@ return function(c)
   hl["SpecialKey"] = { fg = c.search }
   hl["StatusLine"] = { fg = c.normal_fg }
   hl["StatusLineNC"] = {}
-  hl["Substitute"] = { fg = c.string, bg = c.normal_bg_alt }
+  hl["Substitute"] = { fg = c.string, bg = c.normal_embed_bg }
   hl["TabLine"] = { fg = c.comment_fg, bg = c.normal_bg }
   hl["TabLineFill"] = { fg = c.nontext_fg, bg = c.normal_bg }
   hl["TabLineSel"] = { fg = c.important }
@@ -135,7 +135,7 @@ return function(c)
 
   -- Markdown
   hl["markdownBlockquote"] = { fg = c.quote_fg }
-  hl["markdownCodeBlock"] = { bg = c.normal_bg_alt }
+  hl["markdownCodeBlock"] = { bg = c.normal_embed_bg }
   hl["markdownHeadingRule"] = { link = "markdownRule" }
   hl["markdownLinkText"] = { link = "String" }
   hl["markdownListMarker"] = { fg = "fg" }
@@ -185,7 +185,7 @@ return function(c)
   hl["@markup.list.checked.markdown"] = { link = "DiagnosticOk" }
   hl["@markup.list.unchecked.markdown"] = { link = "DiagnosticError" }
   hl["@markup.quote.markdown"] = { link = "markdownBlockquote" }
-  hl["@markup.raw.markdown_inline"] = { fg = c.keyword, bg = c.normal_bg_alt }
+  hl["@markup.raw.markdown_inline"] = { fg = c.keyword, bg = c.normal_embed_bg }
   hl["@punctuation.special.markdown"] = { link = "@markup.quote.markdown" }
 
   for level = 1, 6 do
