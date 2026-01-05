@@ -6,7 +6,7 @@
 
 A colorscheme inspired by
 
-- The original Doom games, particulary [Techbase-style](https://doomwiki.org/wiki/Techbase_map) maps,
+- The aesthetics of [Doom (1993)](<https://en.wikipedia.org/wiki/Doom_(1993_video_game)>) and [Doom 2 (1994)](https://en.wikipedia.org/wiki/Doom_II),
 - 1990's technology and conceptions of future technologies, and
 - sci-fi, sci-fi horror, and cosmic horror.
 
@@ -25,6 +25,24 @@ A colorscheme inspired by
 <img width="2242" height="1690" alt="techbase-react" src="https://github.com/user-attachments/assets/cd31475d-8719-4f48-8e24-8b8dc7cba51e" />
 
 </details>
+
+## Themes
+
+### Techbase
+
+- The original: dark and cold
+- Named after an aesthetic of Doom maps called ["Techbase"](https://doomwiki.org/wiki/Techbase_map).
+
+### Hellbound
+
+- Darkest
+- Named after the first megawad I ever played and one of my favorites, [Hellbound by Zoltán Sófalvi](https://doomwiki.org/wiki/Hellbound).
+
+### Escape Velocity
+
+- high contrast variant of Hellbound
+- Compliant with WCAG AAA
+- Named after ["Escape Velocity" by James Paddock](https://www.youtube.com/watch?v=InjLUK0Ipnk&list=RDInjLUK0Ipnk), the track for Map13 of Doom 2 Megawad [Back to Saturn X](https://doomwiki.org/wiki/Back_to_Saturn_X) and my personal favorite Doom track.
 
 ## Installation
 
