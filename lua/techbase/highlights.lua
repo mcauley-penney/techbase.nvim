@@ -224,6 +224,7 @@ return function(c)
 
   hl["LspCodeLens"] = { fg = c.nontext_fg }
   hl["LspSignatureActiveParameter"] = { sp = c.normal_fg, underline = true }
+  hl["LspReferenceTarget"] = { link = "Substitute" }
 
   -- Semantic Tokens
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
