@@ -24,7 +24,7 @@ return {
   keyword = "#A9B9EF",
   important = "#6A8BE3",
   search = "#E9B872",
-  number = "#B38163",
+  number = "#DE5858",
 
   -- notifications
   info = "#d0cdc8",
