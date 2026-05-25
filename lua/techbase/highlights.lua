@@ -67,7 +67,6 @@ return function(c)
   hl["WinBarNC"] = { link = "WinBar" }
 
   -- ************** SYNTAX **************
-
   hl["Comment"] = { fg = c.comment_fg }
   hl["Constant"] = { fg = c.constant }
   hl["Function"] = { fg = c.important }
@@ -225,6 +224,118 @@ return function(c)
   hl["LspCodeLens"] = { fg = c.nontext_fg }
   hl["LspSignatureActiveParameter"] = { sp = c.normal_fg, underline = true }
   hl["LspReferenceTarget"] = { link = "Substitute" }
+
+  -- ************** PLUGINS **************
+  -- Aerial
+  hl["AerialLine"] = { bg = c.float_bg_select }
+  hl["AerialNormal"] = { link = "" }
+
+  -- Blink
+  hl["BlinkCmpDoc"] = { link = "Pmenu" }
+  hl["BlinkCmpDocBorder"] = { fg = c.float_bg_border, bg = c.float_bg }
+  hl["BlinkCmpDocSeparator"] = { fg = c.float_bg_border }
+  hl["BlinkCmpGhostText"] = { link = "NonText" }
+  hl["BlinkCmpKind"] = { fg = c.important }
+  hl["BlinkCmpLabel"] = { fg = c.float_fg }
+  hl["BlinkCmpLabelDescription"] = { fg = c.nontext_fg }
+  hl["BlinkCmpLabelDetail"] = { link = "NonText" }
+  hl["BlinkCmpLabelMatch"] = { link = "PmenuMatch" }
+  hl["BlinkCmpMenuBorder"] =
+    { fg = hl["FloatBorder"]["fg"], bg = hl["Pmenu"]["bg"] }
+  hl["BlinkCmpMenuSelection"] = { link = "PmenuMatchSel" }
+
+  -- Edgy
+  hl["EdgyNormal"] = { fg = c.comment_fg, bg = c.panel_bg }
+  hl["EdgyIcon"] = { fg = c.comment_fg, bg = c.panel_bg }
+  hl["EdgyIconActive"] = { link = "EdgyIcon" }
+  hl["EdgyWinBar"] =
+    { bg = c.panel_bg, underline = true, sp = c.normal_embed_bg }
+  hl["EdgyTitle"] = { bg = c.panel_bg }
+
+  -- Gitsigns
+  hl["GitSignsAdd"] = { fg = c.git_add_col }
+  hl["GitSignsChange"] = { fg = c.git_change_col }
+  hl["GitSignsDelete"] = { fg = c.git_delete_col }
+  hl["GitSignsChangedelete"] = { link = "GitSignsChange" }
+  hl["GitSignsTopdelete"] = { link = "GitSignsDelete" }
+  hl["GitSignsUntracked"] = { link = "NonText" }
+  hl["GitSignsStagedAdd"] = { fg = tint(c.git_add_col, -50) }
+  hl["GitSignsStagedChange"] = { fg = tint(c.git_change_col, -50) }
+  hl["GitSignsStagedDelete"] = { fg = tint(c.git_delete_col, -50) }
+  hl["GitSignsStagedChangedelete"] = { link = "GitSignsStagedChange" }
+  hl["GitSignsStagedTopdelete"] = { link = "GitSignsStagedDelete" }
+  hl["GitSignsStagedUntracked"] = { link = "GitSignsStagedAdd" }
+  hl["GitSignsCurrentLineBlame"] = { link = "NonText" }
+  hl["GitSignsAddInline"] = { link = "Added" }
+  hl["GitSignsAddLnInline"] = { fg = "fg", bg = tint(c.git_add_bg, 75) }
+  hl["GitSignsDeleteInline"] = { link = "Removed" }
+  hl["GitSignsDeleteLnInline"] = { fg = "fg", bg = tint(c.git_delete_bg, 75) }
+  hl["GitSignsChangeInline"] = { link = "DiffText" }
+  hl["GitSignsChangeLnInline"] = { link = "Changed" }
+  hl["GitSignsDeleteVirtLn"] = { link = "Removed" }
+  hl["GitSignsDeleteVirtLnInLine"] = { link = "Removed" }
+  hl["GitSignsVirtLnum"] = { link = "LineNr" }
+
+  -- hl_match_area
+  hl["MatchArea"] = { link = "MatchParen" }
+
+  -- Lazy.nvim
+  hl["LazyButton"] = { bg = c.float_bg_select }
+  hl["LazyH2"] = { link = "FloatTitle" }
+  hl["LazyButtonActive"] = { link = "Search" }
+  hl["LazyCommit"] = { link = "" }
+  hl["LazyCommitType"] = { link = "@markup.heading.gitcommit" }
+  hl["LazyCommitIssue"] = { link = "Number" }
+  hl["LazyProgressDone"] = { link = "LazyComment" }
+  hl["LazyProgressTodo"] = { link = "FloatBorder" }
+  hl["LazyReasonCmd"] = { link = "Comment" }
+  hl["LazyReasonColorscheme"] = { link = "Comment" }
+  hl["LazyReasonEvent"] = { link = "Comment" }
+  hl["LazyReasonFt"] = { link = "Comment" }
+  hl["LazyReasonPlugin"] = { link = "Comment" }
+  hl["LazyReasonRequire"] = { link = "Comment" }
+  hl["LazyReasonSource"] = { link = "Comment" }
+  hl["LazyReasonStart"] = { link = "Comment" }
+  hl["LazySpecial"] = { link = "Comment" }
+
+  -- Mason
+  hl["MasonBackdrop"] = { link = "NormalFloat" }
+  hl["MasonError"] = { link = "DiagnosticError" }
+  hl["MasonHeader"] = { link = "FloatTitle" }
+  hl["MasonHeaderSecondary"] = { link = "Search" }
+  hl["MasonHeading"] = { link = "FloatTitle" }
+  hl["MasonHighlight"] = { fg = c.comment_fg }
+  hl["MasonHighlightBlock"] = { bg = c.normal_embed_bg }
+  hl["MasonHighlightBlockBold"] = { link = "Search" }
+  hl["MasonHighlightBlockBoldSecondary"] = {}
+  hl["MasonHighlightBlockSecondary"] = {}
+  hl["MasonHighlightSecondary"] = { link = "Search" }
+  hl["MasonLink"] = { fg = c.keyword }
+  hl["MasonMuted"] = { link = "Comment" }
+  hl["MasonMutedBlock"] = { bg = c.normal_embed_bg }
+  hl["MasonMutedBlockBold"] = { link = "Comment" }
+  hl["MasonNormal"] = { link = "NormalFloat" }
+  hl["MasonWarning"] = { link = "DiagnosticWarn" }
+
+  -- MiniCursorword
+  hl["MiniCursorwordCurrent"] = {}
+  hl["MiniCursorword"] = { link = "IlluminatedWordText" }
+
+  -- nvim-cmp
+  hl["CmpItemAbbrDeprecated"] = { strikethrough = true }
+  hl["CmpItemAbbrMatch"] = { link = "PmenuMatch" }
+  hl["CmpItemKind"] = { link = "Keyword" }
+
+  -- vim-highlighturl
+  hl["HighlightUrl"] = { link = "@text.uri" }
+
+  -- vim-illuminate
+  hl["IlluminatedWordText"] = { link = "MatchParen" }
+  hl["IlluminatedWordRead"] = { link = "IlluminatedWordText" }
+  hl["IlluminatedWordWrite"] = { link = "IlluminatedWordText" }
+
+  -- visual-whitespace
+  hl["VisualNonText"] = { fg = c.v_select_nontext, bg = c.v_select }
 
   -- Semantic Tokens
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do

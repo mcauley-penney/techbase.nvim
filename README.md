@@ -10,7 +10,12 @@ A colorscheme inspired by
 - 1990's technology and conceptions of future technologies, and
 - sci-fi, sci-fi horror, and cosmic horror.
 
-## Screenshots
+## Variants
+
+### Techbase
+
+- dark and cold
+- Named after an aesthetic of Doom maps called ["Techbase"](https://doomwiki.org/wiki/Techbase_map).
 
 <details>
 <summary>Markdown</summary>
@@ -26,13 +31,6 @@ A colorscheme inspired by
 
 </details>
 
-## Themes
-
-### Techbase
-
-- The original: dark and cold
-- Named after an aesthetic of Doom maps called ["Techbase"](https://doomwiki.org/wiki/Techbase_map).
-
 ### Hellbound
 
 - Darkest
@@ -46,21 +44,26 @@ A colorscheme inspired by
 
 ## Installation
 
-To use the color scheme with default options with Lazy.nvim:
+Below are examples for installing and loading the color scheme. Call `setup()` before `colorscheme` when using non-default options.
+
+vim.pack:
 
 ```lua
-{
-    "mcauley-penney/techbase.nvim",
-    config = function(_, opts)
-        vim.cmd.colorscheme("techbase")
-    end,
-    priority = 1000
-}
+vim.pack.add({
+  { src = "https://github.com/mcauley-penney/techbase.nvim" },
+})
+
+-- optional: configure before loading the colorscheme
+require("techbase").setup({
+  italic_comments = false,
+  transparent = false,
+  hl_overrides = {},
+})
+
+vim.cmd.colorscheme("techbase")
 ```
 
-## Configuration
-
-A template for using the plugin with non-default options:
+Lazy.nvim:
 
 ```lua
 {
@@ -71,20 +74,6 @@ A template for using the plugin with non-default options:
       -- set to true to make the background, floating windows, statusline,
       -- signcolumn, foldcolumn, and tabline transparent
       transparent = false,
-
-      -- Here, you can disable plugins. All plugins that techbase supports
-      -- are enabled by default. You do not need to specify the ones you
-      -- want to enable, only those you wish to disable. This table
-      -- accepts key-pair values.
-      plugin_support = {
-        visual_whitespace = false,
-      },
-
-      -- You can enable *only* some plugins by using the "only" table
-      -- inside of the "plugin_support" table. This table accepts strings.
-      -- plugin_support = {
-      --   only = { "visual_whitespace" }
-      -- },
 
       -- allows you to override any highlight group for finer-grained control
       hl_overrides = {},
@@ -97,16 +86,24 @@ A template for using the plugin with non-default options:
 > [!IMPORTANT]
 > To load the color scheme by default and use non-default options, you should load the options, then the scheme. This is how the template above is set up.
 
-### Plugin Support
+## Plugins
 
-All plugins that techbase supports are enabled by default. You do not need to specify the ones you want to enable, only those you wish to disable. See [here](https://github.com/mcauley-penney/techbase.nvim/tree/main/lua/techbase/plugins) for a list of plugins that Techbase supports.
+### Highlights
 
-Some plugins need extra configuration to work. These include:
+To override plugin highlights, use `hl_overrides` with the plugin highlight group name:
 
-<details>
-  <summary>Lualine</summary>
+```lua
+opts = {
+  hl_overrides = {
+    GitSignsAdd = { link = "Added" },
+    VisualNonText = { fg = "#ff0000" },
+  },
+}
+```
 
 ### Lualine
+
+Lualine uses a separate theme file and needs to be configured in lualine:
 
 ```lua
  require('lualine').setup {
@@ -116,8 +113,6 @@ Some plugins need extra configuration to work. These include:
   }
 }
 ```
-
-</details>
 
 ## Extras
 
