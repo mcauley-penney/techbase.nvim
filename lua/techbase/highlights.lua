@@ -337,6 +337,9 @@ return function(c)
   -- visual-whitespace
   hl["VisualNonText"] = { fg = c.v_select_nontext, bg = c.v_select }
 
+  -- render-markdown
+  hl["RenderMarkdownH1Bg"] = { bg = c.v_select }
+
   -- Semantic Tokens
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
     vim.api.nvim_set_hl(0, group, {})
