@@ -1,12 +1,16 @@
-local c = require("techbase.palettes.techbase")
+local variants = {
+  techbase = "techbase",
+  hellbound = "hellbound",
+  escape_velocity = "escape_velocity",
+}
+
+local palette = variants[vim.g.colors_name] or "techbase"
+local c = require("techbase.palettes." .. palette)
 
 return {
   normal = {
     a = { fg = c.normal_bg, bg = c.important, gui = "bold" },
-    b = {
-      fg = c.normal_fg,
-      bg = c.normal_embed_bg,
-    },
+    b = { fg = c.normal_fg, bg = c.normal_embed_bg },
     c = { fg = c.normal_fg, bg = c.normal_bg },
   },
   insert = {
