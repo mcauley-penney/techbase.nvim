@@ -124,5 +124,6 @@ Matching color schemes are available for external tools:
 - Tmux
 - Warp
 - Wezterm
+- GNU Coreutils `ls`
 
 Please see those tools' respective documentation for how to use these configurations.
