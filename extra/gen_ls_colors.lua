@@ -8,6 +8,7 @@ local variants = {
   "techbase",
   "hellbound",
   "escape_velocity",
+  "entryway"
 }
 
 local out_dir = "extra/ls_colors"
