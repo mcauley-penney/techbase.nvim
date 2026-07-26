@@ -166,6 +166,7 @@ return function(c)
   hl["@text.reference"] = { link = "String" }
   hl["@text.uri"] = { fg = c.keyword, underline = true }
   hl["@type.builtin"] = { link = "@type" }
+  hl["@variable"] = { link = "normal" }
 
   -- Latex
   hl["@markup.link.label"] = { link = "String" }
@@ -232,8 +233,8 @@ return function(c)
 
   -- Blink
   hl["BlinkCmpDoc"] = { link = "Pmenu" }
-  hl["BlinkCmpDocBorder"] = { fg = c.float_bg_border, bg = c.float_bg }
-  hl["BlinkCmpDocSeparator"] = { fg = c.float_bg_border }
+  hl["BlinkCmpDocBorder"] = { fg = c.float_border_fg, bg = c.float_bg }
+  hl["BlinkCmpDocSeparator"] = { fg = c.float_border_fg }
   hl["BlinkCmpGhostText"] = { link = "NonText" }
   hl["BlinkCmpKind"] = { fg = c.important }
   hl["BlinkCmpLabel"] = { fg = c.float_fg }
@@ -342,7 +343,7 @@ return function(c)
 
   -- Semantic Tokens
   for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
-    vim.api.nvim_set_hl(0, group, {})
+    hl[group] = {}
   end
 
   return hl

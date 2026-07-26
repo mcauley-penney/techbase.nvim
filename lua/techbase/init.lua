@@ -1,4 +1,5 @@
 local M = {}
+local variants = require("techbase.variants")
 
 local defaults = {
   italic_comments = false,
@@ -13,16 +14,14 @@ function M.setup(opts)
   M.opts = vim.tbl_deep_extend("force", {}, defaults, opts)
 end
 
-function M.load(theme)
-  local ok
-  ok, theme = pcall(require, "techbase.palettes." .. theme)
-  theme = ok and theme or require("techbase.palettes.techbase")
+function M.load(name)
+  local scheme_variant = variants.get(name)
+  local color_palette = vim.deepcopy(require(scheme_variant.palette_path))
 
-  local c = vim.deepcopy(theme)
-  local group_fn = require("techbase.highlights")
-  local groups = group_fn(c)
+  local hl_group_fn = require(scheme_variant.groups_path)
+  local hl_groups = hl_group_fn(color_palette)
 
-  groups["Comment"].italic = M.opts.italic_comments
+  hl_groups["Comment"].italic = M.opts.italic_comments
 
   if M.opts.transparent then
     for _, g in ipairs({
@@ -35,20 +34,26 @@ function M.load(theme)
       "TabLine",
       "TabLineFill",
     }) do
-      if groups[g] then groups[g].bg = "NONE" end
+      if hl_groups[g] then hl_groups[g].bg = "NONE" end
     end
   end
 
   local overrides = M.opts.hl_overrides
   local extra = type(overrides) == "function"
-      and overrides(vim.deepcopy(groups))
+      and overrides(vim.deepcopy(hl_groups))
     or overrides
 
   if extra and next(extra) then
-    groups = vim.tbl_deep_extend("force", groups, extra)
+    hl_groups = vim.tbl_deep_extend("force", hl_groups, extra)
   end
 
-  for group, spec in pairs(groups) do
+  vim.cmd("highlight clear")
+
+  if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
+
+  vim.g.colors_name = name
+
+  for group, spec in pairs(hl_groups) do
     vim.api.nvim_set_hl(0, group, spec)
   end
 end
