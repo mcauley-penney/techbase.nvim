@@ -1,0 +1,264 @@
+# Generated from the Techbase palette; do not edit by hand.
+#
+# Format reference:
+# https://man7.org/linux/man-pages/man5/dir_colors.5.html
+
+COLOR tty
+
+# Terminal definitions
+TERM alacritty
+TERM alacritty-direct
+TERM ansi
+TERM *color*
+TERM con[0-9]*x[0-9]*
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM dvtm
+TERM dvtm-256color
+TERM Eterm
+TERM eterm-color
+TERM fbterm
+TERM gnome
+TERM gnome-256color
+TERM hurd
+TERM jfbterm
+TERM konsole
+TERM konsole-256color
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mlterm
+TERM putty
+TERM putty-256color
+TERM rxvt*
+TERM rxvt-unicode
+TERM rxvt-256color
+TERM rxvt-unicode256
+TERM screen*
+TERM screen-256color
+TERM st
+TERM st-256color
+TERM terminator
+TERM tmux*
+TERM tmux-256color
+TERM vt100
+TERM wezterm
+TERM xterm*
+TERM xterm-color
+TERM xterm-88color
+TERM xterm-256color
+TERM xterm-kitty
+
+#+--------------------+
+#+ Global defaults    +
+#+--------------------+
+NORMAL                 00
+RESET                  0
+
+# Regular files
+FILE                   38;2;69;118;60
+
+# Directories
+DIR                    38;2;36;105;244
+
+# Symbolic links
+LINK                   38;2;0;72;160
+MULTIHARDLINK          04;38;2;0;72;160
+
+# Special files
+FIFO                   04;01;38;2;0;72;160
+SOCK                   04;38;2;231;197;71
+DOOR                   04;01;38;2;0;72;160
+BLK                    01;38;2;231;197;71
+CHR                    38;2;231;197;71
+
+# Broken symbolic links and missing targets
+ORPHAN                 38;2;208;0;0
+MISSING                01;38;2;32;32;32;48;2;208;0;0
+
+# Executable files
+EXEC                   38;2;176;0;0
+
+# set-UID/GID files and capabilities
+SETUID                 01;04;38;2;32;32;32
+SETGID                 01;04;38;2;32;32;32
+CAPABILITY             01;38;2;32;32;32
+
+# Sticky and other-writable directories
+STICKY_OTHER_WRITABLE  01;38;2;212;212;212;48;2;36;105;244
+OTHER_WRITABLE         38;2;36;105;244
+STICKY                 04;38;2;32;32;32;48;2;36;105;244
+
+#+--------------------+
+#+ Extension patterns +
+#+--------------------+
+
+*                      38;2;69;118;60
+
+# Archives
+.7z                    38;2;248;119;55
+.ace                   38;2;248;119;55
+.alz                   38;2;248;119;55
+.arc                   38;2;248;119;55
+.arj                   38;2;248;119;55
+.bz                    38;2;248;119;55
+.bz2                   38;2;248;119;55
+.cab                   38;2;248;119;55
+.cpio                  38;2;248;119;55
+.deb                   38;2;248;119;55
+.dz                    38;2;248;119;55
+.ear                   38;2;248;119;55
+.gz                    38;2;248;119;55
+.jar                   38;2;248;119;55
+.lha                   38;2;248;119;55
+.lrz                   38;2;248;119;55
+.lz                    38;2;248;119;55
+.lz4                   38;2;248;119;55
+.lzh                   38;2;248;119;55
+.lzma                  38;2;248;119;55
+.lzo                   38;2;248;119;55
+.rar                   38;2;248;119;55
+.rpm                   38;2;248;119;55
+.rz                    38;2;248;119;55
+.sar                   38;2;248;119;55
+.t7z                   38;2;248;119;55
+.tar                   38;2;248;119;55
+.taz                   38;2;248;119;55
+.tbz                   38;2;248;119;55
+.tbz2                  38;2;248;119;55
+.tgz                   38;2;248;119;55
+.tlz                   38;2;248;119;55
+.txz                   38;2;248;119;55
+.tz                    38;2;248;119;55
+.tzo                   38;2;248;119;55
+.tzst                  38;2;248;119;55
+.war                   38;2;248;119;55
+.xz                    38;2;248;119;55
+.z                     38;2;248;119;55
+.Z                     38;2;248;119;55
+.zip                   38;2;248;119;55
+.zoo                   38;2;248;119;55
+.zst                   38;2;248;119;55
+
+# Executables
+.app                   38;2;208;0;0
+.bat                   38;2;208;0;0
+.btm                   38;2;208;0;0
+.cmd                   38;2;208;0;0
+.com                   38;2;208;0;0
+.exe                   38;2;208;0;0
+.reg                   38;2;208;0;0
+
+# Ignored files
+*~                     38;2;95;96;120
+.bak                   38;2;95;96;120
+.BAK                   38;2;95;96;120
+.gitignore             38;2;95;96;120
+.gitmodules            38;2;95;96;120
+.lock                  38;2;95;96;120
+.log                   38;2;95;96;120
+.old                   38;2;95;96;120
+.OLD                   38;2;95;96;120
+.orig                  38;2;95;96;120
+.ORIG                  38;2;95;96;120
+.swo                   38;2;95;96;120
+.swp                   38;2;95;96;120
+
+# Images
+.bmp                   38;2;0;72;200
+.cgm                   38;2;0;72;200
+.dl                    38;2;0;72;200
+.dvi                   38;2;0;72;200
+.emf                   38;2;0;72;200
+.eps                   38;2;0;72;200
+.gif                   38;2;0;72;200
+.jpeg                  38;2;0;72;200
+.jpg                   38;2;0;72;200
+.JPG                   38;2;0;72;200
+.mng                   38;2;0;72;200
+.pbm                   38;2;0;72;200
+.pcx                   38;2;0;72;200
+.pgm                   38;2;0;72;200
+.png                   38;2;0;72;200
+.PNG                   38;2;0;72;200
+.ppm                   38;2;0;72;200
+.pps                   38;2;0;72;200
+.ppsx                  38;2;0;72;200
+.ps                    38;2;0;72;200
+.svg                   38;2;0;72;200
+.svgz                  38;2;0;72;200
+.tga                   38;2;0;72;200
+.tif                   38;2;0;72;200
+.tiff                  38;2;0;72;200
+.webp                  38;2;0;72;200
+.xbm                   38;2;0;72;200
+.xcf                   38;2;0;72;200
+.xpm                   38;2;0;72;200
+.xwd                   38;2;0;72;200
+.yuv                   38;2;0;72;200
+
+# Video
+.anx                   38;2;231;197;71
+.asf                   38;2;231;197;71
+.avi                   38;2;231;197;71
+.axv                   38;2;231;197;71
+.flc                   38;2;231;197;71
+.fli                   38;2;231;197;71
+.flv                   38;2;231;197;71
+.gl                    38;2;231;197;71
+.m2v                   38;2;231;197;71
+.m4v                   38;2;231;197;71
+.mkv                   38;2;231;197;71
+.mov                   38;2;231;197;71
+.MOV                   38;2;231;197;71
+.mp4                   38;2;231;197;71
+.mpeg                  38;2;231;197;71
+.mpg                   38;2;231;197;71
+.nuv                   38;2;231;197;71
+.ogm                   38;2;231;197;71
+.ogv                   38;2;231;197;71
+.ogx                   38;2;231;197;71
+.qt                    38;2;231;197;71
+.rm                    38;2;231;197;71
+.rmvb                  38;2;231;197;71
+.swf                   38;2;231;197;71
+.vob                   38;2;231;197;71
+.webm                  38;2;231;197;71
+.wmv                   38;2;231;197;71
+
+# Audio
+.aac                   38;2;231;197;71
+.au                    38;2;231;197;71
+.flac                  38;2;231;197;71
+.m4a                   38;2;231;197;71
+.mid                   38;2;231;197;71
+.midi                  38;2;231;197;71
+.mka                   38;2;231;197;71
+.mp3                   38;2;231;197;71
+.mpa                   38;2;231;197;71
+.mpeg                  38;2;231;197;71
+.mpg                   38;2;231;197;71
+.ogg                   38;2;231;197;71
+.opus                  38;2;231;197;71
+.ra                    38;2;231;197;71
+.wav                   38;2;231;197;71
+
+# Documents
+.doc                   38;2;39;136;74
+.docx                  38;2;39;136;74
+.dot                   38;2;39;136;74
+.odg                   38;2;39;136;74
+.odp                   38;2;39;136;74
+.ods                   38;2;39;136;74
+.odt                   38;2;39;136;74
+.otg                   38;2;39;136;74
+.otp                   38;2;39;136;74
+.ots                   38;2;39;136;74
+.ott                   38;2;39;136;74
+.pdf                   38;2;39;136;74
+.ppt                   38;2;39;136;74
+.pptx                  38;2;39;136;74
+.xls                   38;2;39;136;74
+.xlsx                  38;2;39;136;74
