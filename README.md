@@ -97,6 +97,7 @@ Matching color schemes are available for external tools:
 - Warp
 - Wezterm
 - GNU Coreutils `ls`
+- Zsh syntax highlighting
 
 Please see those tools' respective documentation for how to use these configurations.
 
@@ -106,3 +107,9 @@ For GNU Coreutils `ls`, evaluate `dircolors` with the file for your variant:
 eval "$(dircolors -b /path/to/techbase.nvim/extra/dircolors/dircolors-techbase)"
 ```
 
+For zsh, source the file for your variant after loading your syntax-highlighting
+plugin. For example:
+
+```zsh
+source /path/to/techbase.nvim/extra/zsh/techbase.zsh
+```
