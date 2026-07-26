@@ -12,6 +12,7 @@ A colorscheme inspired by the aesthetics of [Doom (1993)](<https://en.wikipedia.
 | techbase        | <img alt="techbase-react" src="https://github.com/user-attachments/assets/cd31475d-8719-4f48-8e24-8b8dc7cba51e" />  | Named after an aesthetic of Doom maps called ["Techbase"](https://doomwiki.org/wiki/Techbase_map). |
 | hellbound       | <img alt="hellbound-react" src="https://github.com/user-attachments/assets/e7766165-218a-4520-9df8-cc8f93858017" /> | Named after the first megawad I ever played and one of my favorites, [Hellbound by Zoltán Sófalvi](https://doomwiki.org/wiki/Hellbound).                                                                        |
 | escape_velocity | <img width="4230" height="2786" alt="escape-velocity_react" src="https://github.com/user-attachments/assets/ec4d2de1-e12a-4c66-9181-b9ce3a44448e" /> | High contrast variant of Hellbound, Compliant with WCAG AAA; Named after ["Escape Velocity" by James Paddock](https://www.youtube.com/watch?v=InjLUK0Ipnk&list=RDInjLUK0Ipnk), my personal favorite Doom track. |
+| sw1comm         | <img width="3728" height="1994" alt="sw1comm" src="https://github.com/user-attachments/assets/99cc5be0-8d93-4c3a-afb9-2933367a526e" /> | Named for a futuristic [wall switch texture from the original DOOM texture set](https://doomwiki.org/wiki/Switch). Described as a "[f]ader with red/green LEDs on SHAWN wall", this texture displays the "off" state of the wall switch and is paired with the "on" state, SW2COMM. |
 
 ## Installation
 

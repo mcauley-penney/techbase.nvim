@@ -1,11 +1,9 @@
-local variants = {
-  techbase = "techbase",
-  hellbound = "hellbound",
-  escape_velocity = "escape_velocity",
-}
+local variants = require("techbase.variants")
 
-local palette = variants[vim.g.colors_name] or "techbase"
-local c = require("techbase.palettes." .. palette)
+local name = variants.find(vim.g.colors_name)
+    and vim.g.colors_name
+  or variants.default
+local c = variants.palette(name)
 
 return {
   normal = {
