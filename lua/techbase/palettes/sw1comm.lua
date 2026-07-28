@@ -8,16 +8,16 @@ return {
 
   -- background
   normal_bg = "#D4D4D4",
-  normal_embed_bg = "#C9C9C9",
-  float_bg = "#C6C6C6",
-  float_bg_select = "#CCCCCC",
+  float_bg = "#CCCCCC",
+  float_bg_select = "#C0C0C0",
+  normal_embed_bg = "#C6C6C6",
   panel_bg = "#C2C2C2",
   v_select = "#A5C6F2",
   v_select_nontext = "#3580E1",
 
   -- accent
   string = "#45763C",
-  raw_string = "#27884A",
+  raw_string = "#00A516",
   cursor = "#FF0000",
   operator = "#C7A31A",
   constant = "#0048C8",

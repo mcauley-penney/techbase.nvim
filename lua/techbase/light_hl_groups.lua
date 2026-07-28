@@ -69,7 +69,7 @@ return function(c)
   -- ************** SYNTAX **************
   hl["Comment"] = { fg = c.comment_fg }
   hl["Constant"] = { fg = c.constant }
-  hl["Function"] = { fg = c.important }
+  hl["Function"] = { fg = c.important, bg = c.normal_embed_bg }
   hl["Keyword"] = { fg = c.keyword }
   hl["Number"] = { fg = c.number }
   hl["Operator"] = { fg = c.operator }
@@ -145,12 +145,17 @@ return function(c)
   hl["dosiniHeader"] = { link = "@markup.heading.1.markdown" }
   hl["dosiniLabel"] = { link = "@property" }
 
+  -- Python
+  hl["pythonBuiltin"] = { link = "Type" }
+  hl["pythonFStringField"] = { fg = c.raw_string }
+  hl["pythonFStringDelimiter"] = { link = "Delimiter" }
+
   -- ************** TREESITTER **************
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
   hl["@constant.builtin"] = { link = "Constant" }
   hl["@function.call"] = { fg = "fg" }
   hl["@function.method.call"] = { fg = "fg" }
-  hl["@markup.heading"] = { link = "Function" }
+  hl["@markup.heading"] = { fg = c.important }
   hl["@markup.raw.block"] = { link = "markdownCodeBlock" }
   hl["@method.call"] = { fg = "fg" }
   hl["@module"] = { fg = "fg" }
@@ -165,6 +170,7 @@ return function(c)
   hl["@text.literal"] = { fg = "fg" }
   hl["@text.reference"] = { link = "String" }
   hl["@text.uri"] = { fg = c.keyword, underline = true }
+  hl["@type"] = { link = "Type" }
   hl["@type.builtin"] = { link = "@type" }
   hl["@variable"] = { fg = "fg" }
 
@@ -230,6 +236,7 @@ return function(c)
   -- Aerial
   hl["AerialLine"] = { bg = c.float_bg_select }
   hl["AerialNormal"] = { link = "" }
+  hl["AerialFunctionIcon"] = { fg = hl["Function"]["fg"] }
 
   -- Blink
   hl["BlinkCmpDoc"] = { link = "Pmenu" }
