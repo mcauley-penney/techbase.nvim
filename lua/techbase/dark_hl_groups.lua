@@ -166,7 +166,7 @@ return function(c)
   hl["@text.reference"] = { link = "String" }
   hl["@text.uri"] = { fg = c.keyword, underline = true }
   hl["@type.builtin"] = { link = "@type" }
-  hl["@variable"] = { link = "normal" }
+  hl["@variable"] = { fg = "fg" }
 
   -- Latex
   hl["@markup.link.label"] = { link = "String" }
