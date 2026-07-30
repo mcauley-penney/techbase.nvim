@@ -8,10 +8,11 @@ return {
 
   -- background
   normal_bg = "#D4D4D4",
-  float_bg = "#CCCCCC",
-  float_bg_select = "#C0C0C0",
   normal_embed_bg = "#C6C6C6",
+  float_bg = "#CCCCCC",
+  float_bg_select = "#bdd6df",
   panel_bg = "#C2C2C2",
+  panel_bg_select = "#c1cdd1",
   v_select = "#A5C6F2",
   v_select_nontext = "#3580E1",
 
